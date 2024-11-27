@@ -37,7 +37,6 @@ SHELL ["/bin/bash", "--login", "-c"]
 RUN conda activate cascadia_env \
     && pip install cascadia
 
-
 # Copy entrypoint script
 COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
