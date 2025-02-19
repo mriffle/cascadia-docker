@@ -37,6 +37,9 @@ SHELL ["/bin/bash", "--login", "-c"]
 RUN conda activate cascadia_env \
     && pip install cascadia
 
+# Add the checkpoint file (cascadia weights)
+COPY cascadia.ckpt /usr/local/bin/
+
 # Copy entrypoint script
 COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
