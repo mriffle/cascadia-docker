@@ -1,0 +1,3 @@
+sudo docker image build -t mriffle/cascadia:0.0.7 -t quay.io/protio/cascadia:0.0.7 .
+sudo docker push mriffle/cascadia:0.0.7
+sudo docker push quay.io/protio/cascadia:0.0.7
